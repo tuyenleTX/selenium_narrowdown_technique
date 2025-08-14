@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 @ComponentXpathSelector(value="//*[@class='product-item']")
 public class ProductItemXpathComponent extends Component {
-    private static final By productTitleSel = By.xpath("//*[@class='product-title']");
+    private static final By productTitleSel = By.xpath(".//*[@class='product-title']");
     public ProductItemXpathComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
